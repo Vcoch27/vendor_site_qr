@@ -1,10 +1,13 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { getWebsiteData } from '@/lib/sheets';
 import { getVendors } from '@/lib/sheets';
 
-export async function GET(request: Request, { params }: { params: { id: string } }) {
+export async function GET(
+  request: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
   try {
-    const { id } = params;
+    const { id } = await params;
 
     // Get all products
     const products = await getWebsiteData();

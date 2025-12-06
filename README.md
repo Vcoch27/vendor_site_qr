@@ -9,17 +9,20 @@
 ## ✨ Tính năng
 
 ### 🔐 Xác thực & Quản lý
+
 - ✅ Đăng ký/Đăng nhập vendor với Google Sheets
 - ✅ Dashboard quản lý sản phẩm hiện đại
 - ✅ Thông tin vendor với validation
 
 ### 📦 Quản lý sản phẩm
+
 - ✅ Thêm/Sửa/Xóa sản phẩm
 - ✅ Upload media lên Cloudinary (ảnh + video)
 - ✅ 3 loại media sections: Main, Sản xuất, Cách sử dụng
 - ✅ Preview realtime trước khi publish
 
 ### 📱 QR Code & Chia sẻ
+
 - ✅ Tạo QR code tự động
 - ✅ Tải xuống QR (SVG format)
 - ✅ In QR code trực tiếp
