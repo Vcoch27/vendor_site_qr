@@ -5,6 +5,12 @@ export async function POST(request: Request) {
   try {
     const data = await request.json();
 
+    if (!data.email || !data.password) {
+      return NextResponse.json({ error: 'Email và mật khẩu là bắt buộc' }, { status: 400 });
+    }
+
+    console.log('[Register] Attempting registration for:', data.email);
+
     // Check if email already exists
     const existing = await findVendorByEmail(data.email);
     if (existing) {
@@ -17,8 +23,11 @@ export async function POST(request: Request) {
       success: true,
       message: 'Đăng ký thành công',
     });
-  } catch (error) {
-    console.error('Register error:', error);
-    return NextResponse.json({ error: 'Lỗi đăng ký' }, { status: 500 });
+  } catch (error: any) {
+    console.error('[Register] Error:', error?.message || error);
+    return NextResponse.json({ 
+      error: 'Lỗi đăng ký', 
+      details: error?.message || 'Unknown error' 
+    }, { status: 500 });
   }
 }
