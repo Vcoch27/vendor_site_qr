@@ -1,12 +1,29 @@
-# Vendor Site - Story QR
+# Story QR - Vendor Management System 🎯
 
-Hệ thống quản lý sản phẩm cho nhà cung cấp dịch vụ với tích hợp Google Sheets và Cloudinary.
+**Hệ thống quản lý sản phẩm thông minh với mã QR cho nhà cung cấp**
 
-## Chức năng chính
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Vcoch27/vendor_site_qr)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8)](https://tailwindcss.com/)
 
-1. **Đăng nhập/Đăng ký** - Form đăng nhập và đăng ký vendor, lưu trữ trên Google Sheets (sheet Vendors)
-2. **Thêm sản phẩm** - Form nhập liệu sản phẩm với upload media lên Cloudinary, lưu vào sheet WebsiteData
-3. **Dashboard** - Hiển thị danh sách sản phẩm, xem trước, tạo QR code, download và in QR
+## ✨ Tính năng
+
+### 🔐 Xác thực & Quản lý
+- ✅ Đăng ký/Đăng nhập vendor với Google Sheets
+- ✅ Dashboard quản lý sản phẩm hiện đại
+- ✅ Thông tin vendor với validation
+
+### 📦 Quản lý sản phẩm
+- ✅ Thêm/Sửa/Xóa sản phẩm
+- ✅ Upload media lên Cloudinary (ảnh + video)
+- ✅ 3 loại media sections: Main, Sản xuất, Cách sử dụng
+- ✅ Preview realtime trước khi publish
+
+### 📱 QR Code & Chia sẻ
+- ✅ Tạo QR code tự động
+- ✅ Tải xuống QR (SVG format)
+- ✅ In QR code trực tiếp
+- ✅ Landing page responsive cho khách hàng
 
 ## Setup
 
